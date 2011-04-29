@@ -1,3 +1,13 @@
+DJANGO PROJECT WITH:
+
+-HTML5 boilerplate: http://html5boilerplate.com/
+-Webassets
+ -960.gs
+ -Sass
+-Dotcloud deployment
+
+DOTCLOUD:
+
 For more information to deploy Django on dotcloud visit:
 http://docs.dotcloud.com/tutorials/django/
 
