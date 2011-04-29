@@ -1,4 +1,4 @@
-# Django settings for dotcloud project.
+# Django settings for django_project project.
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
