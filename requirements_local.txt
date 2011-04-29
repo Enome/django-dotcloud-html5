@@ -1,0 +1,2 @@
+dotcloud==0.3.1
+dotcloud.cli==0.3.1

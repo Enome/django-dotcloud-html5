@@ -1,0 +1,16 @@
+For more information to deploy Django on dotcloud visit:
+http://docs.dotcloud.com/tutorials/django/
+
+Deployment:
+
+Step 1 install the dotcloud cli:
+pip install -r requirements_local.txt
+
+Step 2 create the namespace:
+dotcloud create namespace
+
+Stop 3 create the service:
+dotcloud create -t python namespace.service
+
+Step 4 (this requires git or hg):
+dotcloud push namespace.service .
