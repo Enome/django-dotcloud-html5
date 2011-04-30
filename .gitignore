@@ -1,4 +1,10 @@
 *.pyc
 *.swp
+
+#Ignore the collectstatic directory but not the readme
 /static/*
 !/static/README
+
+#Ignore media directory but not the readme
+/django_project/media/*
+!django_project/media/README

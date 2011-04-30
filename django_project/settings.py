@@ -120,7 +120,9 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_assets',
-    'south',
+    'django_nose',
+    'django_project.apps.web',
+    #'south',
     # Uncomment the next line to enable the admin:
     # 'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
@@ -149,3 +151,10 @@ LOGGING = {
         },
     }
 }
+
+##############
+# WEBASSETS #
+############
+
+ASSETS_ROOT = os.path.join( SITE_ROOT, 'static' )
+ASSETS_URL = '/static/'

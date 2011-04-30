@@ -4,6 +4,8 @@ DJANGO PROJECT WITH:
 -Webassets
  -960.gs
  -Sass
+-Freshen
+-Django-nose 
 -Dotcloud deployment
 
 DOTCLOUD:
