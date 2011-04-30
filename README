@@ -3,10 +3,20 @@ DJANGO PROJECT WITH:
 -HTML5 boilerplate: http://html5boilerplate.com/
 -Webassets
  -960.gs
- -Sass
+ -Sass: http://sass-lang.com/
 -Freshen
 -Django-nose 
 -Dotcloud deployment
+
+ASSETS:
+
+To compile and combined your assets use:
+./manage.py assets build
+
+There is also a watch options which you can use:
+./manage.py assets watch
+
+To compile sass files you need to have ruby installed and the correct gem.
 
 DOTCLOUD:
 
