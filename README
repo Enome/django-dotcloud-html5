@@ -4,7 +4,6 @@ DJANGO PROJECT WITH:
 -Webassets
  -960.gs
  -Sass: http://sass-lang.com/
--Freshen
 -Django-nose 
 -Dotcloud deployment
 
@@ -20,8 +19,8 @@ To compile sass files you need to have ruby installed and the correct gem.
 
 DOTCLOUD:
 
-For more information to deploy Django on dotcloud visit:
-http://docs.dotcloud.com/tutorials/django/
+For more information to deploy on dotcloud visit:
+https://docs.dotcloud.com/
 
 Deployment:
 
