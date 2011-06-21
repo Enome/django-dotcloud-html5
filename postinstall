@@ -1,9 +1,24 @@
 #!/bin/sh
+
+HOSTNAME=$(hostname)
+
 #Collect static files
-python /home/dotcloud/current/django_project/manage.py collectstatic --settings settings_deployment --noinput
+python /home/dotcloud/current/django_project/manage.py collectstatic --settings $HOSTNAME --noinput
 
 #Syncdb
-python /home/dotcloud/current/django_project/manage.py syncdb --settings settings_deployment
+python /home/dotcloud/current/django_project/manage.py syncdb --settings $HOSTNAME
 
 #Run south to migrate database
-python /home/dotcloud/current/django_project/manage.py migrate --settings settings_deployment
+python /home/dotcloud/current/django_project/manage.py migrate --settings $HOSTNAME
+
+#Create directories
+mkdir ~/data &> /dev/null
+
+mkdir ~/data/media &> /dev/null
+mkdir ~/data/media/uploads &> /dev/null
+mkdir ~/data/media/versions &> /dev/null
+
+mkdir ~/data/whoosh &> /dev/null
+
+#rebuild index
+python /home/dotcloud/current/django_project/manage.py rebuild_index --noinput --settings $HOSTNAME

@@ -2,6 +2,10 @@
 import os
 SITE_ROOT = os.path.dirname(__file__)
 
+import sys
+#Add external apps to path
+sys.path.insert(0, os.path.join(SITE_ROOT, 'apps_ext'))
+
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
@@ -29,7 +33,7 @@ DATABASES = {
 # timezone as the operating system.
 # If running in a Windows environment this must be set to the same as your
 # system time zone.
-TIME_ZONE = 'America/Chicago'
+TIME_ZONE = 'Europe/Brussels'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
