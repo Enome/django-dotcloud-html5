@@ -9,5 +9,5 @@ DATABASES = {
 }
 
 TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
-#Includes support for freshen and bdd style tests for unit tests
-NOSE_ARGS = [r'-m', r'((?:^|[b_.-])(:?[Tt]est|When|should))', ]
+NOSE_ARGS = [r'-m', r'((?:^|[b_.-])(:?[Tt]est|describe|When|should|it))' ] 
+SOUTH_TESTS_MIGRATE = False
